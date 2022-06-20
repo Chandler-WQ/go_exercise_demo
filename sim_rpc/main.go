@@ -32,6 +32,7 @@ func startServer(addr chan string) {
 	Accept(l)
 }
 
+//https://github.com/geektutu/7days-golang
 func main() {
 	log.SetFlags(0)
 	addr := make(chan string)
