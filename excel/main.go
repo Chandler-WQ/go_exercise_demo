@@ -18,8 +18,9 @@ import (
 var sourcePath string
 var targetPath string
 
-// CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o txt2xlsx ./excel
+// CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o txt2xlsx.exe ./excel
 //go build -o txt2xlsx ./excel
+//./txt2xlsx -source=./excel target=data.xlsx
 func main() {
 	flag.StringVar(&sourcePath, "source", "./", "the source dir path")
 	flag.StringVar(&targetPath, "target", "data.xlsx", "the target file path")
